@@ -1,5 +1,5 @@
 ### docker-swarm deployment with zero downtime ###
-    a
+    
     version: '3.7'
     networks:
       nginx:
@@ -28,3 +28,11 @@
           test: ["CMD", "service", "nginx", "status"]
         networks:
           - nginx
+#### Deploy the stack ####
+    docker stack deploy -c docker-compose.yml nginx
+#### List the docker stacks ####
+    docker stack ls
+#### List the docker services ####
+    docker service ls
+#### List the running docker containers ####
+    docker ps
