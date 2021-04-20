@@ -137,4 +137,3 @@ docker service ps
 docker ps
 ```
 
-docker ps
